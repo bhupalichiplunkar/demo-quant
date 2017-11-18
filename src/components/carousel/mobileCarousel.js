@@ -22,36 +22,26 @@ export default class MobileCarousel extends Component {
       let {activeIndex} = this.state;
       const {arrayOfData} = this.props;
       switch (direction) {
-        case "up":
-          // Handle Swipe Up
-          console.log(direction);
-          break;
-        case "down":
-          console.log(direction)
-          // Handle Swipe Down
-          break;
         case "left":
+          // Handle Swipe Left
           if(arrayOfData.length -1 > activeIndex){
             activeIndex += 1;
             this.setState({
               activeIndex 
             })
-            console.log(direction)
           }
-          // Handle Swipe Left
           break;
         case "right":
-        if(activeIndex>0){
-          activeIndex -= 1;
-          this.setState({
-            activeIndex 
-          })
-          console.log(direction)
-        }
           // Handle Swipe Right
+          if(activeIndex>0){
+            activeIndex -= 1;
+            this.setState({
+              activeIndex 
+            })
+          }
           break;
         default : 
-          console.log(direction);
+          //do nothing;
       }
   }
 

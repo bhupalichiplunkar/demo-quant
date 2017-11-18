@@ -9,6 +9,12 @@ export default function Swipe(elem, callback) {
 	elem.addEventListener('touchstart', handleEvent, false);
 	elem.addEventListener('touchmove', handleEvent, false);
 	elem.addEventListener('touchend', handleEvent, false);
+
+	this.removeListeners = () => {
+		elem.removeListeners('touchstart', handleEvent, false);
+		elem.removeListeners('touchmove', handleEvent, false);
+		elem.removeListeners('touchend', handleEvent, false);
+	}
 }
 Swipe.prototype.touches = {
 	"touchstart": {"x":-1, "y":-1},

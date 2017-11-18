@@ -13,7 +13,8 @@ export default class MobileCarousel extends Component {
   }
 
   componentDidMount(){
-    new Swipe(document.getElementById("inner-gallery"), this.swipeDetector);
+    const swiper = new Swipe(document.getElementById("inner-gallery"), this.swipeDetector);
+    this.setState({swiper})
   }
 
   swipeDetector(event, direction){
@@ -83,5 +84,9 @@ export default class MobileCarousel extends Component {
         </div>
       </div>
     )
+  }
+
+  componentWillUnmount(){
+    this.state.swiper.removeListeners()
   }
 }

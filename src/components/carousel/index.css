@@ -1,0 +1,185 @@
+@media screen and (max-width: 786px) {
+  .outer-container {
+    width: 90%;
+    height: 350px;
+    margin: 50px auto; }
+    .outer-container .h-container {
+      display: flex;
+      flex-flow: column nowrap;
+      height: 50px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 30px; }
+      .outer-container .h-container > .heading {
+        flex: 0 0 auto;
+        height: 100%;
+        visibility: hidden;
+        transition: top ease-in-out 0.5s;
+        position: absolute;
+        top: 100%;
+        left: 0; }
+        .outer-container .h-container > .heading > .heading {
+          font-size: 22px;
+          line-height: 25px;
+          font-weight: 600;
+          letter-spacing: 0.2px; }
+        .outer-container .h-container > .heading > .sub-heading {
+          font-size: 14px;
+          line-height: 25px;
+          font-weight: 600;
+          letter-spacing: 0.2px; }
+        .outer-container .h-container > .heading.prev {
+          top: -100%; }
+        .outer-container .h-container > .heading.active {
+          visibility: visible;
+          top: 0; }
+    .outer-container .inner-container {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative; }
+      .outer-container .inner-container img {
+        flex: 0 0 auto;
+        width: 85%;
+        height: 350px;
+        object-fit: cover;
+        visibility: hidden;
+        opacity: 0;
+        left: -100%;
+        border-radius: 5px; }
+        .outer-container .inner-container img.active, .outer-container .inner-container img.prev-index, .outer-container .inner-container img.next-index {
+          visibility: visible;
+          opacity: 1;
+          left: 0;
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          transform: scale(1, 1);
+          transition: all ease-in-out 0.5s;
+          transition-delay: 0.3s; }
+        .outer-container .inner-container img.next2-index {
+          visibility: visible;
+          z-index: 0;
+          position: absolute;
+          left: 20%;
+          opacity: 0.2;
+          transform: scale(0.8, 0.8);
+          transition: all ease-in-out 0.5s;
+          transition-delay: 0.2s; }
+        .outer-container .inner-container img.next-index {
+          z-index: 1;
+          position: absolute;
+          left: 10%;
+          opacity: 0.7;
+          transform: scale(0.9, 0.9);
+          transition: all ease-in-out 0.5s; }
+    .outer-container .d-container {
+      display: flex;
+      flex-flow: row nowrap;
+      height: 50px;
+      width: auto; }
+      .outer-container .d-container > .dot {
+        width: 10px;
+        height: 10px;
+        border: 2px solid gray;
+        margin: 10px 10px 0 0;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all ease-in-out 0.5s; }
+        .outer-container .d-container > .dot.active {
+          border-color: black; } }
+
+@media screen and (min-width: 786px) {
+  .outer-container {
+    width: 90%;
+    height: 350px;
+    margin: 50px auto; }
+    .outer-container .h-container {
+      display: flex;
+      flex-flow: column nowrap;
+      height: 50px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 30px; }
+      .outer-container .h-container > .heading {
+        flex: 0 0 auto;
+        height: 100%;
+        visibility: hidden;
+        transition: top ease-in-out 0.5s;
+        position: absolute;
+        top: 100%;
+        left: 0; }
+        .outer-container .h-container > .heading > .heading {
+          font-size: 22px;
+          line-height: 25px;
+          font-weight: 600;
+          letter-spacing: 0.2px; }
+        .outer-container .h-container > .heading > .sub-heading {
+          font-size: 14px;
+          line-height: 25px;
+          font-weight: 600;
+          letter-spacing: 0.2px; }
+        .outer-container .h-container > .heading.prev {
+          top: -100%; }
+        .outer-container .h-container > .heading.active {
+          visibility: visible;
+          top: 0; }
+    .outer-container .inner-container {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative; }
+      .outer-container .inner-container img {
+        flex: 0 0 auto;
+        width: 85%;
+        height: 350px;
+        object-fit: cover;
+        visibility: hidden;
+        opacity: 0;
+        left: -100%;
+        border-radius: 5px; }
+        .outer-container .inner-container img.active, .outer-container .inner-container img.prev-index, .outer-container .inner-container img.next-index {
+          visibility: visible;
+          opacity: 1;
+          left: 0;
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          transform: scale(1, 1);
+          transition: all ease-in-out 0.5s;
+          transition-delay: 0.3s; }
+        .outer-container .inner-container img.next2-index {
+          visibility: visible;
+          z-index: 0;
+          position: absolute;
+          left: 20%;
+          opacity: 0.2;
+          transform: scale(0.8, 0.8);
+          transition: all ease-in-out 0.5s;
+          transition-delay: 0.2s; }
+        .outer-container .inner-container img.next-index {
+          z-index: 1;
+          position: absolute;
+          left: 10%;
+          opacity: 0.7;
+          transform: scale(0.9, 0.9);
+          transition: all ease-in-out 0.5s; }
+    .outer-container .d-container {
+      display: flex;
+      flex-flow: row nowrap;
+      height: 50px;
+      width: auto; }
+      .outer-container .d-container > .dot {
+        width: 10px;
+        height: 10px;
+        border: 2px solid gray;
+        margin: 10px 10px 0 0;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all ease-in-out 0.5s; }
+        .outer-container .d-container > .dot.active {
+          border-color: black; } }

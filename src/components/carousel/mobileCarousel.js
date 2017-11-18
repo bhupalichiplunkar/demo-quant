@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Swipe from './swipe';
 import './index.css';
 
-export default class InnerList extends Component {
+export default class MobileCarousel extends Component {
   constructor(props){
     super(props);
     this.state = {
